@@ -12,9 +12,20 @@
 
 // Створюємо функцію конструктор Vehicle.
 function Vehicle(brand, model, year, mileage) {
-  //  Записуєм в this.brand значення аргументу brand, в this.model значення аргументу model і так далі зі всіми аргументами
-  begining 
+  this.brand = brand;
+  this.model = model;
+  this.year = year;
+  this.mileage= mileage;
+  //  Записуєм в this.brand значення аргументу brand, в this.model значення аргументу model і так далі зі всіми аргументам
 }
+
+Vehicle.toString = function(){
+  return( `This car is: ${this.brand}, ${this.model} (${this.year})`);
+};
+// Рядковому представленю Vehicle призначаємо функцію яка повертає рядок: <brand> <model> <year>
+Vehicle.valueOf = function (){
+  return (this.mileage);
+};
 
 // Рядковому представленю Vehicle призначаємо функцію яка повертає рядок: <brand> <model> <year>
 
