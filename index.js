@@ -13,6 +13,7 @@
 // Створюємо функцію конструктор Vehicle.
 function Vehicle(brand, model, year, mileage) {
   //  Записуєм в this.brand значення аргументу brand, в this.model значення аргументу model і так далі зі всіми аргументами
+  begining 
 }
 
 // Рядковому представленю Vehicle призначаємо функцію яка повертає рядок: <brand> <model> <year>
